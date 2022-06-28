@@ -1,19 +1,18 @@
-const num1 = parseFloat(prompt('Enter n1:'));
-const num2 = parseFloat(prompt('Enter n2:'));
+const num1 = parseFloat(prompt('Enter first number:'));
+const num2 = parseFloat(prompt('Enter second number:'));
 
-const operator = prompt('Enter operator(+,-,/,*');
-let result = 0;
-if(isNaN(num1) || isNaN=(num2)){
-    alert('wrong input!')
-}else{
-    if (operator == '+'){
+const operator = prompt('Enter operator(+,-,/,*)');
+let result;
+    if (operator == '+') {
         result = num1 + num2;
-    }else if (operator == '-'){
+    } else if (operator == '-') {
         result = num1 - num2;
-    }else if (operator == '/'){
+    } else if (operator == '/') {
         result = num1 / num2;
-    }else if (operator == '*'){
+    } else if (operator == '*') {
         result = num1 * num2;
     }
-    alert(num1+operator+num2+'=' + result);
-}
+    else {
+        alert("Invalid operator!");
+    }
+    alert(num1 + operator + num2 + '=' + result);
